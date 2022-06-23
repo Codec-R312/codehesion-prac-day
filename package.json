@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "formik": "^2.2.9",
+    "react-router-dom": "^6.3.0",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-plugin-react": "^7.30.0"
+  }
+}

@@ -1,7 +1,10 @@
 import * as React from 'react'
+import "./loginBackgragound.css"
 
 export default function Login() {
   return (
-    <div>Login</div>
+    <div className='body'>Login</div>
   )
 }
+
+

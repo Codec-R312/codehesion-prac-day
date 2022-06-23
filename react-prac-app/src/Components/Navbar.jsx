@@ -10,6 +10,7 @@ import {AppBar, Box,Divider,
     Toolbar,
     Typography,
     Button} from '@mui/material'
+    import { VscMenu } from "react-icons/vsc";
 
 
 const drawerWidth = 240;
@@ -54,7 +55,7 @@ function Navbar(props) {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
-            <Icon />
+            <VscMenu />
           </IconButton>
           <Typography
             variant="h6"
@@ -96,3 +97,5 @@ function Navbar(props) {
 
 
 export default Navbar;
+
+

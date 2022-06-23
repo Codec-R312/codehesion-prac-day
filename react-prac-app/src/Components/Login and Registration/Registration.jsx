@@ -1,12 +1,15 @@
 import React from 'react'
 import { useRef, useState, useEffect } from "react";
-import { AiOutlineCheckCircle,FcInfo, FaTimes} from "react-icons";
-import axios from './api/axios';
+import { FaTimes} from "react-icons/fa";
+import { FcInfo} from "react-icons/fc";
+import { AiOutlineCheckCircle} from "react-icons/ai";
+
+import axios from '../../api/axios';
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
-const REGISTER_URL = '/register';
+const REGISTER_URL = '/registration';
 
 export default function Registration() {
   const userRef = useRef();
@@ -53,7 +56,7 @@ export default function Registration() {
           setErrMsg("Invalid Entry");
           return;
       }
-      
+
       try {
           const response = await axios.post(REGISTER_URL,
               JSON.stringify({ user, pwd }),
